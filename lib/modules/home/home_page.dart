@@ -29,7 +29,8 @@ class _HomePageState extends State<HomePage> {
   }
 
   void listener() {
-    final direction = scrollController.position.userScrollDirection;
+    final direction = scrollController.position
+        .userScrollDirection; // here we can use max scroll to achive after 200 pixcel it will hide bottom nav bar
     if (direction == ScrollDirection.forward) {
       showBootomNav();
     } else if (direction == ScrollDirection.reverse) {
